@@ -2,6 +2,9 @@
 
 #import "SystemNotificationView.h"
 
+#define IS_OS_8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
 #define KNotiStatueOpen @"已开启    "
 #define KNotiStatueClose @"未开启    "
 @implementation SystemNotificationView
