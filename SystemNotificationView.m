@@ -83,8 +83,8 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-  
-    [SVProgressHUD showSuccessWithStatus:@"如果你要开启或者关闭系统消息，请在iPhone的“设置”-“通知” 功能中，找到应用程序 进行修改" duration:5];
+    NSLog(@"如果你要开启或者关闭系统消息，请在iPhone的“设置”-“通知” 功能中，找到应用程序 进行修改");
+    //[SVProgressHUD showSuccessWithStatus:@"如果你要开启或者关闭系统消息，请在iPhone的“设置”-“通知” 功能中，找到应用程序 进行修改" duration:5];
     
 }
 
